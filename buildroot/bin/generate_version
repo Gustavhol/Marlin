@@ -16,7 +16,7 @@ VERSION=$(git -C "${DIR}" describe --tags --first-parent 2>/dev/null)
 [ -z "${BRANCH}" ] && BRANCH=$(echo "${TRAVIS_BRANCH}")
 [ -z "${VERSION}" ] && VERSION=$(git -C "${DIR}" describe --tags --first-parent --always 2>/dev/null)
 
-SHORT_BUILD_VERSION=$(echo "${BRANCH}")
+SHORT_BUILD_VERSION=Merlin 2.0
 DETAILED_BUILD_VERSION=$(echo "${BRANCH}-${VERSION}")
 
 # Gets some misc options from their defaults
